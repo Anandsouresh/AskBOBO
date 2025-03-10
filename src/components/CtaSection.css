@@ -1,0 +1,225 @@
+.cta-section {
+  padding: 120px 0;
+  position: relative;
+  overflow: visible;
+  background-color: white;
+}
+
+.cta-wrapper {
+  background-color: #4F46E5;
+  padding: 24px 0;
+  color: white;
+  position: relative;
+  overflow: visible;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-content {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 0;
+  align-items: center;
+  position: relative;
+}
+
+.cta-text {
+  max-width: 520px;
+  padding-right: 40px;
+}
+
+.cta-text h2 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.cta-description {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  opacity: 0.9;
+  max-width: 480px;
+}
+
+.cta-subtitle {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 32px;
+}
+
+.cta-store-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.store-button {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.store-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.store-button img {
+  height: 32px;
+}
+
+.cta-phones {
+  position: relative;
+  width: 120%;
+  margin-left: -5%;
+  margin-top: -100px;
+  margin-bottom: -100px;
+}
+
+.phones-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform: scale(0.85);
+  filter: drop-shadow(0 25px 40px rgba(0, 0, 0, 0.15));
+}
+
+.cta-decorations {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 32px;
+}
+
+.star-1 {
+  top: 10%;
+  left: 5%;
+}
+
+.star-2 {
+  bottom: 15%;
+  right: 10%;
+}
+
+@media (max-width: 1200px) {
+  .cta-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cta-phones {
+    width: 110%;
+    margin-left: -2%;
+  }
+
+  .phones-image {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 1024px) {
+  .cta-section {
+    padding: 80px 0;
+  }
+
+  .cta-wrapper {
+    padding: 20px 0;
+  }
+
+  .cta-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .cta-text {
+    margin: 0 auto;
+    padding-right: 0;
+  }
+
+  .cta-text h2 {
+    font-size: 48px;
+  }
+
+  .cta-description {
+    font-size: 18px;
+    margin: 0 auto 12px;
+  }
+
+  .cta-store-buttons {
+    justify-content: center;
+  }
+
+  .cta-phones {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: -20px;
+  }
+
+  .phones-image {
+    max-width: 550px;
+    margin: 0 auto;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 60px 0;
+  }
+
+  .cta-wrapper {
+    padding: 16px 0;
+  }
+
+  .cta-text h2 {
+    font-size: 40px;
+  }
+
+  .cta-description {
+    font-size: 16px;
+  }
+
+  .phones-image {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cta-section {
+    padding: 40px 0;
+  }
+
+  .cta-wrapper {
+    padding: 12px 0;
+  }
+
+  .phones-image {
+    max-width: 360px;
+  }
+
+  .store-button img {
+    height: 32px;
+  }
+}
+

@@ -1,0 +1,39 @@
+.footer {
+  background-color: #1f2937;
+  padding: 60px 0;
+  color: #9ca3af;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 10rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.1);
+  margin: 0;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0;
+  }
+  
+  .footer-logo {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 32px 0;
+  }
+  
+  .footer-logo {
+    font-size: 3rem;
+  }
+}
+

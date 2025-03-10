@@ -1,0 +1,220 @@
+.header {
+  background: linear-gradient(to right, #ffffff, #eef2ff);
+  padding: 20px 0 80px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.header-top {
+  margin-bottom: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-circle {
+  width: 40px;
+  height: 40px;
+  background: #4338CA;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: -0.02em;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 443.14px;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+}
+
+.header-text h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 24px;
+  white-space: nowrap;
+}
+
+.header-text p {
+  font-size: 18px;
+  color: #4b5563;
+  margin-bottom: 48px;
+  max-width: 540px;
+  line-height: 1.6;
+}
+
+.launch-info p {
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.progress-bar {
+  width: 240px;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.progress-fill {
+  width: 75%;
+  height: 100%;
+  background-color: #4f46e5;
+  border-radius: 9999px;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.store-button img {
+  height: 48px;
+  transition: transform 0.2s ease;
+}
+
+.store-button:hover img {
+  transform: scale(1.05);
+}
+
+.header-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 443.14px;
+  height: auto;
+  margin-top: 0;
+  overflow: visible;
+}
+
+.blur-circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(79, 70, 229, 0.3);
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 0;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
+}
+
+.mascot-image {
+  width: 350px;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  transform: translateY(-20px);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+/* Remove the right side gradient since we're using the circle for the blur effect */
+.header::after {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header-content {
+    grid-template-columns: 1fr 400px;
+    gap: 40px;
+  }
+
+  .header-text h1 {
+    font-size: 56px;
+    white-space: normal;
+  }
+
+  .mascot-image {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 0 40px;
+  }
+
+  .header-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .header-text {
+    order: 1;
+  }
+
+  .header-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-image {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .launch-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mascot-image {
+    width: 250px;
+  }
+
+  .blur-circle {
+    width: 300px;
+    height: 300px;
+  }
+}
+  
+  
