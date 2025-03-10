@@ -1,4 +1,4 @@
-import "./Header.css"
+import "./header.css"
 import appStoreImg from "../assets/app-store.png"
 import googlePlayImg from "../assets/google-play.png"
 import logoImg from "../assets/logo.png"
