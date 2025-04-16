@@ -13,11 +13,11 @@ function Header() {
             <div className="logo-circle">
               <img 
                 src={logoImg}
-                alt="AskBoBo Logo" 
+                alt="Askira Logo" 
                 className="logo-img"
               />
             </div>
-            <span className="logo-text">AskBoBo</span>
+            <span className="logo-text">Askira</span>
           </div>
         </div>
 
@@ -53,7 +53,7 @@ function Header() {
             <div className="blur-circle"></div>
             <img
               src={mascotImg}
-              alt="AskBoBo Mascot"
+              alt="Askira Mascot"
               className="mascot-image"
             />
           </div>

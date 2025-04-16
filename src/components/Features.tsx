@@ -26,7 +26,7 @@ const Features = () => {
         <div className="features-content">
           <div className="features-image">
             <div className="phone-wrapper">
-              <img src={phoneScreen} alt="AskBoBo App Interface" className="phone-screen" />
+              <img src={phoneScreen} alt="Askira App Interface" className="phone-screen" />
             </div>
           </div>
           
